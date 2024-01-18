@@ -1,0 +1,235 @@
+@font-face {
+    font-family: AsianArtStyle;
+    src: url(../Font/ZenMasters-6YWRY.ttf);
+}
+
+@font-face {
+    font-family: TextStyle;
+    src: url(../Font/PixelifySans-VariableFont_wght.ttf);
+}
+
+* {
+    color: white;
+    margin: 0;
+}
+
+body {
+    background-image: url(../Images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+.head {
+    font-family: AsianArtStyle;
+    font-size: 12vh;
+    text-align: center;
+    margin-top: 0;
+}
+
+.player {
+    font-family: TextStyle;
+    font-size: 6vh;
+}
+
+.samurai {
+    display: flex;
+}
+
+.samurais {
+    background-color: rgb(83, 83, 83);
+    border: 5px solid rgba(83, 83, 83, 0.781);
+    border-radius: 25px;
+    margin: 5%;
+    text-align: center;
+}
+
+.box {
+    background-color: rgba(83, 83, 83, 0.658);
+    width: 100%;
+    height: 95vh;
+}
+
+.firstSamurai {
+    height: auto;
+    width: 85%;
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.secondSamurai {
+    height: auto;
+    width: 70%;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.thirdSamurai {
+    height: auto;
+    width: 70%;
+    margin-left: 0%;
+    margin-top: 22%;
+}
+
+.flexbox {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+
+.heart {
+    height: 30px;
+    width: auto;
+    margin-top: 5%;
+    margin-left: 80%;
+    margin-top: 15%;
+}
+
+.sword {
+    height: 30px;
+    width: auto;
+    margin-left: 80%;
+    margin-top: 15%;
+}
+
+.values {
+    font-family: TextStyle;
+    font-size: xx-large;
+    width: 50%;
+    margin-top: 15%;
+}
+
+.arrow {
+    margin-top: 2%;
+    margin-left: 44%;
+}
+
+#newGame {
+    font-family: AsianArtStyle;
+    font-size: 8vh;
+    text-align: center;
+    margin-top: 0;
+}
+
+#gameNumber {
+    font-family: AsianArtStyle;
+    font-size: 8vh;
+    text-align: center;
+    margin-top: 0;
+}
+
+#output {
+    font-family: TextStyle;
+    font-size: 6vh;
+    text-align: center;
+    background-color: rgb(95, 95, 95);
+}
+
+#playerOne, #playerTwo {
+    font-family: TextStyle;
+    font-size: 2.5vh;
+}
+
+#playerOneDice, #playerTwoDice {
+    font-family: TextStyle;
+    font-size: 3vh;
+}
+
+#nextRound {
+    font-family: TextStyle;
+    font-size: 3vh;
+    text-align: center;
+    background-color: rgb(255, 122, 33);
+}
+
+#playerOneDice {
+    padding-left: 3%;
+    width: 97%;
+    background-color: rgb(36, 36, 36);
+    font-size: 4vh;
+    animation: blink ease-in 0.8s infinite;
+}
+
+#playerTwoDice {
+    text-align: right;
+    padding-right: 3%;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    font-size: 4vh;
+    animation: blink ease-in 0.8s infinite;
+}
+
+.alert {
+    background-color: rgb(131, 61, 61);
+    width: 100%;
+    animation: blink ease-in 0.8s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; } 
+}
+
+#playerOne img {
+    height: 25vh;
+    width: auto;
+    margin-left: 6%;
+}
+
+#playerTwo img {
+    height: 25vh;
+    width: auto;
+    margin-right: 6%;
+    transform: scaleX(-1);
+}
+
+#playerOne {
+    padding-left: 3%;
+    width: 100%;
+    background-color: rgb(96, 96, 255);
+}
+
+#gameCharOne, #gameCharTwo {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#playerTwo {
+    text-align: right;
+    padding-right: 3%;
+    width: 100%;
+    background-color: rgb(255, 57, 57);
+}
+
+.players {
+    display: grid;
+    grid-template-columns: 25% 50% 24.2%;
+}
+
+.players2 {
+    display: grid;
+    grid-template-columns: 25% 50% 24.2%;
+}
+
+.playerSelection {
+    font-family: TextStyle;
+    font-size: 6vh;
+    text-align: center;
+}
+
+.dice {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.winner {
+    background-color: rgb(0, 163, 0);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    animation: blink ease-in 0.2s infinite;
+}

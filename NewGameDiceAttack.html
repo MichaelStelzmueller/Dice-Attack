@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Attack</title>
+    <link rel="stylesheet" href="./CSS/styleNewGame.css" type="text/css">
+    <script src="./NewGameDiceAttack.js" defer></script>
+</head>
+<body>
+    <p class="head">Wählt eure Samurai!</p>
+
+    <p class="playerSelection">Spieler 1</p>
+
+    <div class="samurai">
+        <div class="samurais" id="rookieSamurai1" onclick="rookiesamurai1()">
+            <p class="player">Rookie Samurai</p>
+            <img class="firstSamurai" src="./Images/rookiesamurai.png" alt="Rookie"><br>
+            <div class="flexbox">
+                <img class="heart" src="./Images/Heart.png" alt="HP"><p class="values">= 15</p><br>
+            </div>
+            <div class="flexbox">
+                <img class="sword" src="./Images/Sword.png" alt="AD"><p class="values">= 1</p><br>
+            </div>
+        </div>
+        <div class="samurais" id="advancedSamurai1" onclick="advancedsamurai1()">
+            <p class="player">Advanced Samurai</p>
+            <img class="secondSamurai" src="./Images/advancedsamurai.png" alt="Advanced"><br>
+            <div class="flexbox">
+                <img class="heart" src="./Images/Heart.png" alt="HP"><p class="values">= 10</p><br>
+            </div>
+            <div class="flexbox">
+                <img class="sword" src="./Images/Sword.png" alt="AD"><p class="values">= 3</p><br>
+            </div>
+        </div>
+        <div class="samurais" id="masterSamurai1" onclick="mastersamurai1()">
+            <p class="player">Master Samurai</p>
+            <img class="thirdSamurai" src="./Images/mastersamurai.png" alt="Master"><br>
+            <div class="flexbox">
+                <img class="heart" src="./Images/Heart.png" alt="HP"><p class="values">= 5</p><br>
+            </div>
+            <div class="flexbox">
+                <img class="sword" src="./Images/Sword.png" alt="AD"><p class="values">= 5</p><br>
+            </div>
+        </div>
+    </div>
+
+    <p class="playerSelection">Spieler 2</p>
+
+    <div class="samurai">
+        <div class="samurais" id="rookieSamurai2" onclick="rookiesamurai2()">
+            <p class="player">Rookie Samurai</p>
+            <img class="firstSamurai" src="./Images/rookiesamurai.png" alt="Rookie"><br><br>
+            <div class="flexbox">
+                <img class="heart" src="./Images/Heart.png" alt="HP"><p class="values">= 15</p><br>
+            </div>
+            <div class="flexbox">
+                <img class="sword" src="./Images/Sword.png" alt="AD"><p class="values">= 1</p><br>
+            </div>
+        </div>
+        <div class="samurais" id="advancedSamurai2" onclick="advancedsamurai2()">
+            <p class="player">Advanced Samurai</p>
+            <img class="secondSamurai" src="./Images/advancedsamurai.png" alt="Advanced"><br>
+            <div class="flexbox">
+                <img class="heart" src="./Images/Heart.png" alt="HP"><p class="values">= 10</p><br>
+            </div>
+            <div class="flexbox">
+                <img class="sword" src="./Images/Sword.png" alt="AD"><p class="values">= 3</p><br>
+            </div>
+        </div>
+        <div class="samurais" id="masterSamurai2" onclick="mastersamurai2()">
+            <p class="player">Master Samurai</p>
+            <img class="thirdSamurai" src="./Images/mastersamurai.png" alt="Master"><br>
+            <div class="flexbox">
+                <img class="heart" src="./Images/Heart.png" alt="HP"><p class="values">= 5</p><br>
+            </div>
+            <div class="flexbox">
+                <img class="sword" src="./Images/Sword.png" alt="AD"><p class="values">= 5</p><br>
+            </div>
+        </div>
+    </div>
+
+    <img class="arrow" src="./Images/Arrow.png" alt="GoDown">
+
+    <div class="box">
+        <p class="head">Würfel um dein Leben</p>
+        <div id="newGame" onclick="newGame()"><p>Starte die Runde</p></div>
+        <div id="gameNumber"></div>
+        <div class="players">
+            <div id="playerOne">
+                <div id="gameCharOne"></div>
+            </div>
+            <div id="output"></div>
+            <div id="playerTwo">
+                <div id="gameCharTwo"></div>
+            </div>
+        </div>
+        <div class="players2">
+            <div id="playerOneDice" onclick="newDicePlayer1()"></div>
+            <div id="nextRound" onclick="newGame()"></div>
+            <div id="playerTwoDice" onclick="newDicePlayer2()"></div>
+        </div>
+    </div>  
+</body>
+</html>

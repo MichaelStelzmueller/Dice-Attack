@@ -1,0 +1,65 @@
+@font-face {
+    font-family: AsianArtStyle;
+    src: url(../Font/ZenMasters-6YWRY.ttf);
+}
+
+@font-face {
+    font-family: TextStyle;
+    src: url(../Font/PixelifySans-VariableFont_wght.ttf);
+}
+
+* {
+    color: white;
+}
+
+body {
+    background-image: url(../Images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+.head {
+    font-family: AsianArtStyle;
+    font-size: 12vh;
+    text-align: center;
+    margin-top: 0;
+}
+
+#ad {
+    background-color: rgba(83, 83, 83, 0.925);
+    padding: 2%;
+    text-align: center;
+    width: 65%;
+    margin-left: 15%;
+    border: 5px solid rgba(83, 83, 83, 0.781);
+    border-radius: 25px;
+    font-family: TextStyle;
+}
+
+#man {
+    position: absolute;
+    left: 26.5%;
+    top: 10%;
+    height: auto;
+    width: 10%;
+}
+
+#katana {
+    position: absolute;
+    left: 20%;
+    top: 62%;
+}
+
+.arrow {
+    margin-top: 2%;
+    margin-left: 44%;
+}
+
+.important {
+    color: rgb(182, 182, 0);
+}
